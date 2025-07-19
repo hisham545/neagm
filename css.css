@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100vh;
+}
+h1{
+    position: relative;
+}
+h1::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    height:0px;
+    width: 0px;
+    left: 30px;
+   background-color: red;
+   border-style: solid;
+   transition: 2s;
+   transform: scaleY(0.5);
+   
+}
+h1:hover::before{
+    transform: scale3d(20,0.5,1);
+}
